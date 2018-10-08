@@ -1,0 +1,71 @@
+/***************
+Search Box
+****************/
+
+body {
+	display: flex;
+	width: 100vw;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 98 vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.photoSection {
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photoSection img {
+	width: 15vw;
+}
+
+.searchBox {
+	margin-left:10%;
+	padding: 10px;
+	height: 50px;
+	align-items: center;
+}
+
+.photoSearch {
+	margin-left: 10%;
+	border: solid #cccccc;
+	border-radius: 8px;
+	border-width: 2px;
+	font-size: 16px;
+	color: #808080;
+	height: 40px;
+	width: 42vw;
+}
+
+
+h3 {
+display: none;
+}
+
+
+figcaption{
+display: none;
+}
+
+
+/***************
+
+****************/
+
+
+
+
+
+
+
+/***************
+
+****************/
