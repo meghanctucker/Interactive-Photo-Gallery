@@ -3,103 +3,140 @@
 <head>
   <meta charset="utf-8">
   <title>Treehouse Lightbox</title>
-  <link rel="stylesheet" href="jquery.h5-lightbox.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="jquery.fancybox.css">
   <link rel="stylesheet" href="mainStyles.css">
 </head>
 <body>
-<div class="wrapper">
    <header>
     </header>
-	<div>
-		<form class="searchBox">
-      	<input class="photoSearch" type="search"></input>
-      </form>
+    <div class="wrapper">
+	<div id="searchFeature">
+		<div id="searchBox">
+      		<input class="photoSearch" type="text"></input>
+      	</div>
 	</div>
 </div>
 
-    <div class="photoSection">  
+<div id="gallery">
+    <ul class="photoSection">  
     	
-    	<figure>
-    		<img src="thumbnails/01thumb.jpg" alt="01" data-large-src="photos/01.jpg"/>
-			<h3>Hay Bales</h3>
-			<figcaption>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</figcaption>
-		</figure>
+    	<li>
+    		<a href="photos/01.jpg" data-fancybox="gallery" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+    		<img src="thumbnails/01thumb.jpg" alt="01 Hay Bales"/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/02thumb.jpg" alt="02" data-large-src="photos/02.jpg"/>
-			<h3>Lake</h3>
-			<figcaption>The lake was so calm today. We had a great view of the snow on the mountains from here.</figcaption>
-		</figure>
+		<li>
+			<a href="photos/02.jpg" data-fancybox="gallery" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+			<img src="thumbnails/02thumb.jpg" alt="02 Lake"/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/03thumb.jpg" alt="03" data-large-src="photos/03.jpg"/>
-			<h3>Canyon</h3>
-			<figcaption>I hiked to the top of the mountain and got this picture of the canyon and trees below.</figcaption>
-		</figure>
+		<li>
+			<a href="photos/03.jpg" data-fancybox="gallery" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+			<img src="thumbnails/03thumb.jpg" alt="03 Canyon" data-large-src=""/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/04thumb.jpg" alt="04" data-large-src="photos/04.jpg"/>
-			<h3>Iceberg</h3>
-			<figcaption>It was amazing to see an iceberg up close, it was so cold but didn’t snow today. </figcaption>
-		</figure>
+		<li>
+			<a href="photos/04.jpg" data-fancybox="gallery" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+			<img src="thumbnails/04thumb.jpg" alt="04 Iceberg" data-large-src=""/>
+			</a>		
+		</li>
 
-		<figure>
-			<img src="thumbnails/05thumb.jpg" alt="05" data-large-src="photos/05.jpg"/>
-			<h3>Desert</h3>
-			<figcaption>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</figcaption>
-		</figure>
+		<li>
+			<a href="photos/05.jpg" data-fancybox="gallery" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+			<img src="thumbnails/05thumb.jpg" alt="05 Desert" data-large-src=""/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/06thumb.jpg" alt="06" data-large-src="photos/06.jpg"/>
-			<h3>Fall</h3>
-			<figcaption>Fall is coming, I love when the leaves on the trees start to change color.</figcaption>
-		</figure>
+		<li>
+			<a href="photos/06.jpg" data-fancybox="gallery" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
+			<img src="thumbnails/06thumb.jpg" alt="06 Fall" data-large-src=""/>
+			</a>
+		</li>
 		
-		<figure>
-			<img src="thumbnails/07thumb.jpg" alt="07" data-large-src="photos/07.jpg"/>
-			<h3>Plantation</h3>
-			<figcaption>I drove past this plantation yesterday, everything is so green!</figcaption>
-		</figure>
+		<li>
+			<a href="photos/07.jpg" data-fancybox="gallery" data-caption="I drove past this plantation yesterday, everything is so green!">
+			<img src="thumbnails/07thumb.jpg" alt="07 Plantation" data-large-src=""/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/08thumb.jpg" alt="08" data-large-src="photos/08.jpg"/>
-			<h3>Dunes</h3>
-			<figcaption>My summer vacation to the Oregon Coast. I love the sandy dunes!</figcaption>
-		</figure>
+		<li>
+			<a href="photos/08.jpg" data-fancybox="gallery" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+			<img src="thumbnails/08thumb.jpg" alt="08 Dunes" data-large-src=""/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/09thumb.jpg" alt="09" data-large-src="photos/09.jpg"/>
-			<h3>Countryside Lane</h3>
-			<figcaption>We enjoyed a quiet stroll down this countryside lane.</figcaption> 
-		</figure>
+		<li>
+			<a href="photos/09.jpg" data-fancybox="gallery" data-caption="We enjoyed a quiet stroll down this countryside lane.">
+			<img src="thumbnails/09thumb.jpg" alt="09 Countryside Lane" data-large-src=""/>
+			</a>
+		</li>
 		
-		<figure>
-			<img src="thumbnails/10thumb.jpg" alt="10" data-large-src="photos/10.jpg"/>
-			<h3>Sunset</h3>
-			<figcaption>Sunset at the coast! The sky turned a lovely shade of orange.</figcaption>
-		</figure>
+		<li>
+			<a href="photos/10.jpg" data-fancybox="gallery" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
+			<img src="thumbnails/10thumb.jpg" alt="10 Sunset" data-large-src=""/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/11thumb.jpg" alt="11" data-large-src="photos/11.jpg"/>
-			<h3>Cave</h3>
-			<figcaption>I did a tour of a cave today and the view of the landscape below was breathtaking.</figcaption>
-		</figure>
+		<li>
+			<a href="photos/11.jpg" data-fancybox="gallery" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+			<img src="thumbnails/11thumb.jpg" alt="11 Cave" data-large-src=""/>
+			</a>
+		</li>
 
-		<figure>
-			<img src="thumbnails/12thumb.jpg" alt="12" data-large-src="photos/12.jpg"/>
-			<h3>Bluebells</h3>
-			<figcaption>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</figcaption>
-    	</figure>
-    </div>
+		<li>
+			<a href="photos/12.jpg" data-fancybox="gallery" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+			<img src="thumbnails/12thumb.jpg" alt="12 Bluebells" data-large-src=""/>
+    		</a>
+    	</li>
+    </ul>
+</div>
     <footer>
    
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src='jquery.h5-lightbox.js'></script>
+<script src='jquery.fancybox.js'></script>
 <script> 
-	jQuery(function ($) {
-		$ ("img").h5lightbox();
-	});
+	$('[data-fancybox="gallery"]').fancybox({
+	// Options will go here
+	loop: true,
+	buttons: ["close"],
+});
+</script>
+<script>
+	(function ($) {
+	  jQuery.expr[':'].Contains = function(a,i,m){
+		  return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+	  };
+	 
+	  function listFilter(header, list) {
+		var form = $("<form>").attr({"class":"filterform","action":"#"}),
+			input = $("<input>").attr({"class":"filterinput","type":"text"});
+		$(form).append(input).appendTo(header);
+	 
+		$(input)
+		  .change( function () {
+			var filter = $(this).val();
+			if(filter) {
+			  $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
+			  $(list).find("a:Contains(" + filter + ")").parent().slideDown();
+			} else {
+			  $(list).find("li").slideDown();
+			}
+			return false;
+		  })
+		.keyup( function () {
+			$(this).change();
+		});
+	  }
+	
+	  $(function () {
+		listFilter($("#header"), $("#list"));
+	  });
+	}(jQuery));
 </script>
 </body>
 </html>
