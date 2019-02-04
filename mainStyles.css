@@ -44,7 +44,9 @@ search box styles
 	/*background-color: green;*/
 }
 
-
+.photoSection li p {
+display: none;
+}
 
 
 
