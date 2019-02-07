@@ -31,77 +31,66 @@
 		<li>
 			<a href="photos/02.jpg" data-fancybox="gallery" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
 			<img src="thumbnails/02thumb.jpg" alt="02 Lake"/>
-			<!-- <p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/03.jpg" data-fancybox="gallery" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
 			<img src="thumbnails/03thumb.jpg" alt="03 Canyon" data-large-src=""/>
-			<!-- <p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/04.jpg" data-fancybox="gallery" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
 			<img src="thumbnails/04thumb.jpg" alt="04 Iceberg" data-large-src=""/>
-			<!-- <p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p> -->
 			</a>		
 		</li>
 
 		<li>
 			<a href="photos/05.jpg" data-fancybox="gallery" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
 			<img src="thumbnails/05thumb.jpg" alt="05 Desert" data-large-src=""/>
-			<!-- <p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/06.jpg" data-fancybox="gallery" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
 			<img src="thumbnails/06thumb.jpg" alt="06 Fall" data-large-src=""/>
-			<!-- <p>Fall is coming, I love when the leaves on the trees start to change color</p> -->
 			</a>
 		</li>
 		
 		<li>
 			<a href="photos/07.jpg" data-fancybox="gallery" data-caption="I drove past this plantation yesterday, everything is so green!">
 			<img src="thumbnails/07thumb.jpg" alt="07 Plantation" data-large-src=""/>
-			<!-- <p>I drove past this plantation yesterday, everything is so green!</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/08.jpg" data-fancybox="gallery" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
 			<img src="thumbnails/08thumb.jpg" alt="08 Dunes" data-large-src=""/>
-			<!-- <p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/09.jpg" data-fancybox="gallery" data-caption="We enjoyed a quiet stroll down this countryside lane.">
 			<img src="thumbnails/09thumb.jpg" alt="09 Countryside Lane" data-large-src=""/>
-			<!-- <p>We enjoyed a quiet stroll down this countryside lane.</p> -->
 			</a>
 		</li>
 		
 		<li>
 			<a href="photos/10.jpg" data-fancybox="gallery" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
 			<img src="thumbnails/10thumb.jpg" alt="10 Sunset" data-large-src=""/>
-			<!-- <p>Sunset at the coast! The sky turned a lovely shade of orange.</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/11.jpg" data-fancybox="gallery" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
 			<img src="thumbnails/11thumb.jpg" alt="11 Cave" data-large-src=""/>
-			<!-- <p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p> -->
 			</a>
 		</li>
 
 		<li>
 			<a href="photos/12.jpg" data-fancybox="gallery" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
 			<img src="thumbnails/12thumb.jpg" alt="12 Bluebells" data-large-src=""/>
-			<!-- <p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p> -->
     		</a>
     	</li>
     </ul>
@@ -155,7 +144,6 @@
 $(document).ready(function(){
   		$(".photoSearch").on("keyup", function() {
     		var value = $(this).val().toLowerCase().split(" ");
-    		//var searchCaption = $("a").attr("data-caption");
     		$("[data-caption]").filter(function() {
     			var searchCaption = $(this).attr("data-caption").toLowerCase();
     			var isInSearch = true;
@@ -167,24 +155,6 @@ $(document).ready(function(){
     		});
   		});
 	});
-
-/** script that works
-	$(document).ready(function(){
-  		$(".photoSearch").on("keyup", function() {
-    		var value = $(this).val().toLowerCase();
-    		//var searchCaption = $("a").attr("data-caption");
-    		$("[data-caption]").filter(function() {
-      			$(this).toggle($(this).attr("data-caption").toLowerCase().indexOf(value) > -1)
-    		});
-  		});
-	});
-	**/
-//var searchCaption = $("a").attr("data-caption");
-//console.log(searchCaption);
-//$("li").each(function {
-//	var searchCaption = $("a").attr("data-caption");
-//	alert(index + ":" + $("li").children("p"));
-//});
 </script>
 </body>
 </html>
