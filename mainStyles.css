@@ -2,27 +2,107 @@
 search box styles
 ****************/
 
-#searchFeature {
-	/*background-color: aqua;*/
-	margin: 20px 0px 10px 0px;
+	#searchFeature {
+	margin: 50px 0px 50px 0px;
 }
 
 #searchBox {
-	padding: 10px;
 	height: 50px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	}
-	
+
 .photoSearch {
 	border: solid #cccccc;
 	border-radius: 8px;
 	border-width: 2px;
 	font-size: 16px;
-	color: #808080;
+	font-weight: 200;
 	height: 40px;
 	width: 40%;
+	padding-left: 15px;
+	margin-left: -15px;
+	font-family: sans-serif;
 }
 
+.fancybox-caption {
+	color: #d0d9e8;
+	font-family: courier, sans-serif;
+	max-width: 600px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.photoSection {
+	max-width: 90%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 20%);
+	grid-row-gap: 50px;
+	grid-column-gap: 50px;
+	justify-content: center;
+}
+
+@media (max-width: 900px) {
+	.photoSection {
+		max-width: 90%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 25%);
+		grid-row-gap: 30px;
+		grid-column-gap: 30px;
+	}
+}
+
+@media (max-width: 750px) {
+	.photoSection {
+		max-width: 90%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 35%);
+		grid-row-gap: 20px;
+		grid-column-gap: 20px;
+	}
+}
+
+@media (max-width: 650px) {
+	.photoSection {
+		max-width: 90%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 45%);
+		grid-row-gap: 20px;
+		grid-column-gap: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.photoSection {
+		max-width: 90%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 50%);
+		grid-row-gap: 20px;
+		grid-column-gap: 20px;
+	}
+}
+
+/*
+.photoSection {
+	display:flex;
+	flex-wrap: wrap;
+	max-width: 95%;
+}
+
+.photoSection li {
+	flex: auto;
+	margin: 1%;
+	flex-basis: 1 20%;
+	Min-width: 20%;
+}
+
+.photoSection li a {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 1 20%;
+
+}
+/*
 #gallery {
 	width: 100%;
 	display: inline-block;
@@ -41,15 +121,9 @@ search box styles
 	padding: 5px;
 	margin: 15px 5px;
 	width: 20%;
-	/*background-color: green;*/
 }
 
 .photoSection li p {
 display: none;
 }
-
-
-
-
-
-
+*/

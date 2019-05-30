@@ -13,18 +13,18 @@
     <div class="wrapper">
 	<div id="searchFeature">
 		<div id="searchBox">
-      		<input class="photoSearch" type="text"></input>
+      		<input class="photoSearch" type="text" placeholder="Search">
       	</div>
 	</div>
 </div>
 
 <div id="gallery">
-    <ul class="photoSection">  
-    	
+    <ul class="photoSection">
+
     	<li>
     		<a href="photos/01.jpg" data-fancybox="gallery" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
     		<img src="thumbnails/01thumb.jpg" alt="01 Hay Bales"/>
-    		
+
 			</a>
 		</li>
 
@@ -43,7 +43,7 @@
 		<li>
 			<a href="photos/04.jpg" data-fancybox="gallery" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
 			<img src="thumbnails/04thumb.jpg" alt="04 Iceberg" data-large-src=""/>
-			</a>		
+			</a>
 		</li>
 
 		<li>
@@ -57,7 +57,7 @@
 			<img src="thumbnails/06thumb.jpg" alt="06 Fall" data-large-src=""/>
 			</a>
 		</li>
-		
+
 		<li>
 			<a href="photos/07.jpg" data-fancybox="gallery" data-caption="I drove past this plantation yesterday, everything is so green!">
 			<img src="thumbnails/07thumb.jpg" alt="07 Plantation" data-large-src=""/>
@@ -75,7 +75,7 @@
 			<img src="thumbnails/09thumb.jpg" alt="09 Countryside Lane" data-large-src=""/>
 			</a>
 		</li>
-		
+
 		<li>
 			<a href="photos/10.jpg" data-fancybox="gallery" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
 			<img src="thumbnails/10thumb.jpg" alt="10 Sunset" data-large-src=""/>
@@ -96,11 +96,11 @@
     </ul>
 </div>
     <footer>
-   
+
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src='jquery.fancybox.js'></script>
-<script> 
+<script>
 	$('[data-fancybox="gallery"]').fancybox({
 	// Options will go here
 	loop: true,
@@ -108,53 +108,6 @@
 });
 </script>
 
-<script>
-	(function ($) {
-	  jQuery.expr[':'].Contains = function(a,i,m){
-		  return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-	  };
-	 
-	  function listFilter(header, list) {
-		var form = $("<form>").attr({"class":"filterform","action":"#"}),
-			input = $("<input>").attr({"class":"filterinput","type":"text"});
-		$(form).append(input).appendTo(header);
-	 
-		$(input)
-		  .change( function () {
-			var filter = $(this).val();
-			if(filter) {
-			  $(list).find("a:not(:Contains(" + filter + "))").parent().slideUp();
-			  $(list).find("a:Contains(" + filter + ")").parent().slideDown();
-			} else {
-			  $(list).find("li").slideDown();
-			}
-			return false;
-		  })
-		.keyup( function () {
-			$(this).change();
-		});
-	  }
-	
-	  $(function () {
-		listFilter($("#header"), $("#list"));
-	  });
-	}(jQuery));
-</script>
-<script>
-$(document).ready(function(){
-  		$(".photoSearch").on("keyup", function() {
-    		var value = $(this).val().toLowerCase().split(" ");
-    		$("[data-caption]").filter(function() {
-    			var searchCaption = $(this).attr("data-caption").toLowerCase();
-    			var isInSearch = true;
-    			value.forEach(function(searchWord) {
-    				if (searchCaption.indexOf(searchWord) <= -1)
-    					isInSearch = false;
-    				});
-      			$(this).toggle(isInSearch);
-    		});
-  		});
-	});
-</script>
+<script src='scripts.js'></script>
 </body>
 </html>
